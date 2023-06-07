@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>correctguess</title>
+
+    <link rel="shortcut icon" href="diceImage.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<style>
+    .secret-box{
+        position: absolute;
+        top:25%
+    }
+    .btn{
+        position: absolute;
+        top:70%;
+    }
+    .final-scores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+        font-family: 'Press Start 2P', cursive;
+        
+    }
+
+    .final-scores p{
+        font-size: 2rem;
+        color:blanchedalmond
+    }
+    .high-score{
+        margin-top: 4rem;
+    }
+
+    .timer{
+        margin-top: 4rem;
+    }
+    .secret-no{
+        margin-top: 4rem;
+        font-size: 4rem;
+    }
+    .guess-state{
+        position: absolute;
+        top:10%;
+        color:blanchedalmond;
+        font-size: 1.6rem;
+        font-family: 'Press Start 2P', cursive;
+    }
+    
+</style>
+<body>
+    
+        <h2 class="guess-state">START GUESSING</h2>
+        <div class="container">        
+            <div class="secret-box">
+                <p class="secret-nos-txt">SECRET NO.?</p>
+                <div class="secret-no">3</div>
+            </div>
+    
+            <div class="final-scores">
+                <div class="score">
+                    <p>SCORE:<span class="intial-score">20</span></p>
+                </div>
+        
+                <div class="high-score">
+                    <p>HIGH SCORE:<span class="intial-highscore">0</span></p>
+                </div>
+    
+                <div class="timer">
+                    <p>COUNTER:<span class="intial-timer">0s</span></p>
+                </div>
+            </div>
+    
+    
+            <button class="btn start-guess-btn">START GUESS</button>
+    
+        </div>
+    
+    
+
+
+    
+    <script src="main.js"></script>
+    <script src="secondary.js"></script>
+</body>
+</html>
